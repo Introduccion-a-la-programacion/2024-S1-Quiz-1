@@ -1,4 +1,4 @@
-# 2022-S2 Quiz 1
+# Quiz 1
 
 ## Instrucciones Generales
 - El archivo **debe** llamarse **Quiz1.py**
