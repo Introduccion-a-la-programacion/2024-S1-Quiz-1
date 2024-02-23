@@ -37,11 +37,9 @@
 
 ```python
 >>>sumaDigitosImpares(135)     
-8
-
+9
 >>>sumaDigitosImpares(611)     
 2
-
 >>>sumaDigitosImpares('2345')     
 "Error: Tipo de parámetro es incorrecto"
 
@@ -57,11 +55,11 @@
 - Resultado = 25, debido a que los dígitos 1,3,5,7 y 9 son impares y la suma de ellos dos son 25
 
 ```python
->>>sumaDigitosImpares(135)     
-8
->>>sumaDigitosImpares(-611)     
+>>>sumaDigitosImpares_v2(135)     
+9
+>>>sumaDigitosImpares_v2(-611)     
 -2
->>>sumaDigitosImpares('2345')     
+>>>sumaDigitosImpares_v2('2345')     
 "Error: Tipo de parámetro es incorrecto"
 
 ```
