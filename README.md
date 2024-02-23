@@ -64,7 +64,5 @@
 >>>sumaDigitosImpares('2345')     
 "Error: Tipo de parámetro es incorrecto"
 
->>>sumaDigitosImpares(-2345)     
-"Error: El valor de num debe ser positivo"
 ```
 
