@@ -7,36 +7,64 @@
 - Debe crear los comentarios de cada función tomando en cuenta **Nombre**,  **Entrada**, **Salida** y **Restricciones**
 - Debe crear el **pseudocódigo en Pseint** y guardar el archivo en este repositorio
 
-## tieneDigitosImpares(num)  (10 puntos)
-- Construir una función que **TRUE** si los dígitos del número todos son **impares**.
-- Retornará **TRUE** en el caso que todos sean impares, **FALSE** en el caso de que no.
-- El parámetro **num** debe ser entero y mayor a CERO
-- 
+## provinciaPerteneciente(digito)
+- Desarrolle una función llamada **provinciaPerteneciente(digito)** y que retorne el **nombre** de la provincia según el dígito de entrada. El valor del dígito es **entero** y **no debe ser negativo** y los valores válidos para el parámetro deben ser entre 1 a 7
+- Debe ser implementado usando **ELIF**
 ```python
->>>tieneDigitosImpares(135)     
-True
+>>> provinciaPerteneciente(1)
+"San José"
+>>> provinciaPerteneciente(2)
+"Alajuela"
+>>> provinciaPerteneciente(3)
+"Cartago"
+>>> provinciaPerteneciente(4)
+"Heredia"
+>>> provinciaPerteneciente(5)
+"Puntarenas"
+>>> provinciaPerteneciente(6)
+"Guanacaste"
+>>> provinciaPerteneciente(7)
+"Limón"
+>>> provinciaPerteneciente(10)
+"Error: Valor no reconocido"
 
->>>tieneDigitosImpares(211)     
-False
+```
+## sumaDigitosImpares(num)  
+- Desarrolle una función llamada **sumaDigitosImpares(num)** que, dado un número **positivo** **entero**, este debe retornar la **suma** de sus dígitos si estos son **impares**.
+- Ejemplo:
+- Numero = 12354879
+- Resultado = 25, debido a que los dígitos 1,3,5,7 y 9 son impares y la suma de ellos dos son 25
 
->>>tieneDigitosImpares('2345')     
-'Error: Tipo de parámetro es incorrecto'
+```python
+>>>sumaDigitosImpares(135)     
+8
+
+>>>sumaDigitosImpares(611)     
+2
+
+>>>sumaDigitosImpares('2345')     
+"Error: Tipo de parámetro es incorrecto"
+
+>>>sumaDigitosImpares(-2345)     
+"Error: El valor de num debe ser positivo"
 ```
 
-## factorialPorRango(inicio, fin, rango)  (15 puntos)
-
-- Desarrollar la función factorialPorRango donde realizará el factorial desde **inicio** hasta el número **fin** especificado en el parámetro de entrada
-- El parámetro **rango** será la forma de cómo será el factorial, es decir de 2 en 2, o 3 en 3
-- Ambos parámetros debe ser enteros positivos
-
+## sumaDigitosImpares_v2(num)  
+- Desarrolle una función llamada **sumaDigitosImpares(num)** que, dado un número **entero**, este debe retornar la **suma** de sus dígitos si estos son **impares**.
+- Si el número **es negativo** el resultado debe conservar el signo
+- Ejemplo:
+- Numero = 12354879
+- Resultado = 25, debido a que los dígitos 1,3,5,7 y 9 son impares y la suma de ellos dos son 25
 
 ```python
->>> factorialPorRango(6, 20, 4)  #6 * 10 * 14 * 18
-15120
+>>>sumaDigitosImpares(135)     
+8
+>>>sumaDigitosImpares(-611)     
+-2
+>>>sumaDigitosImpares('2345')     
+"Error: Tipo de parámetro es incorrecto"
 
->>> factorialPorRango(2, 5, 1)  #2 * 3 * 4 * 5
-120
-
->>> factorialPorRango('2', 5, 2)     
-'Error: Parámetro num es incorrecto'
+>>>sumaDigitosImpares(-2345)     
+"Error: El valor de num debe ser positivo"
 ```
+
