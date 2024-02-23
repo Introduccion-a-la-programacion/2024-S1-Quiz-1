@@ -1,24 +1,38 @@
 import Quiz1;
 import pytest;
 
+def test_provinciaPerteneciente_1():
+    assert Quiz1.provinciaPerteneciente(1) == "San José"
 
-def test_tieneDigitosImpares_1():
-    assert Quiz1.tieneDigitosImpares(135) == True
+def test_provinciaPerteneciente_2():
+    assert Quiz1.provinciaPerteneciente(3) == "Cartago"
 
-def test_tieneDigitosImpares_2():
-    assert Quiz1.tieneDigitosImpares(211) == False
+def test_provinciaPerteneciente_3():
+    assert Quiz1.provinciaPerteneciente(7) == "Limón"
 
-def test_tieneDigitosImpares_3():
-    assert Quiz1.tieneDigitosImpares('2345') == 'Error: Tipo de parámetro es incorrecto'    
+def test_provinciaPerteneciente_4():
+    assert Quiz1.provinciaPerteneciente(10) == "Error: Valor no reconocido"    
     
     
-def test_factorialPorRango_1():
-    assert Quiz1.factorialPorRango(6, 20, 4) == 15120
+def test_sumaDigitosImpares_1():
+    assert Quiz1.sumaDigitosImpares(135) == 9
 
-def test_factorialPorRango_2():
-    assert Quiz1.factorialPorRango(2, 5, 1) == 120
+def test_sumaeDigitosImpares_2():
+    assert Quiz1.sumaDigitosImpares(611) == 2
 
-def test_factorialPorRango_5():
-    assert Quiz1.factorialPorRango('2', 5, 2) == 'Error: Parámetro Inicio num es incorrecto' 
-    
+def test_sumaDigitosImpares_3():
+    assert Quiz1.sumaDigitosImpares('2345') == "Error: Tipo de parámetro es incorrecto" 
+
+def test_sumaDigitosImpares_4():
+    assert Quiz1.sumaDigitosImpares(-2345) == "Error: El valor de num debe ser positivo"
+
+
+def test_sumaDigitosImpares_v2_1():
+    assert Quiz1.sumaDigitosImpares_v2(135) == 9
+
+def test_sumaeDigitosImpares_v2_2():
+    assert Quiz1.sumaDigitosImpares_v2(611) == 2
+
+def test_sumaDigitosImpares_v2_3():
+    assert Quiz1.sumaDigitosImpares_v2('2345') == "Error: Tipo de parámetro es incorrecto" 
     
